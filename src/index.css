@@ -1,7 +1,9 @@
 :root {
   --cover: rgb(32, 35, 50);
-  --box: #353a55;
-  --color-theme: #ACB0CC;
+  --box: #00000083;
+  --color-theme: #ced0e2;
+  --v-global-theme-primary: 115,103,240;
+  --hover : linear-gradient(72.47deg,rgb(var(--v-global-theme-primary)) 22.16%,rgba(var(--v-global-theme-primary),.7) 76.47%)
 }
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800&display=swap');

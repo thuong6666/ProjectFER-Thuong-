@@ -16,14 +16,14 @@ export default function Class() {
     const [subject, setSubject] = useState()
     useEffect(() => {
         setFlag(true)
-        fetch("http://localhost:8888/class")
+        fetch("http://localhost:8080/class")
             .then(res => res.json())
             .then(res => {
                 if (res) {
                     setListClass(res)
                 }
             })
-        fetch("http://localhost:8888/user")
+        fetch("http://localhost:8080/user")
             .then(res => res.json())
             .then(res => {
                 const s = JSON.parse(data)
@@ -33,16 +33,16 @@ export default function Class() {
                     }
                 })
             })
-        fetch("http://localhost:8888/user")
+        fetch("http://localhost:8080/user")
             .then(res => res.json())
             .then(res => {
                 setListStudent(res)
             })
-        fetch("http://localhost:8888/subject")
+        fetch("http://localhost:8080/subject")
             .then(res => res.json())
             .then(res => {
-                console.log(listSubject)
                 setListSubject(res)
+                console.log(listSubject)
             })
 
     }, [])
@@ -57,13 +57,12 @@ export default function Class() {
         const classs = listClass.find(c => c.id === classID)
         const subjectID = classs.subjectID
         listSubject.forEach(s => {
-            console.log(s.id)
-            console.log(subjectID)
-            if (s.id === subjectID) {
+            if (s.subjectID === subjectID) {
                 setSubject(s)
             }
         })
         const index = classs.studentID.indexOf(student.id)
+        console.log(index)
         if (index !== -1) {
             setFlag2(false)
             setFlag3(true)
@@ -77,7 +76,7 @@ export default function Class() {
     const ShowSchedule = () => {
         if (flag3 === false) { return }
         return (
-            <table>
+            <table className={style.fix}>
                 <thead>
                     <tr>
                         <th> Class </th>
@@ -112,7 +111,7 @@ export default function Class() {
         if (flag1 === true) {
             classs.studentID.push(student.id)
             student.classID.push(classs.id)
-            fetch("http://localhost:8888/class/" + classs.id, {
+            fetch("http://localhost:8080/class/" + classs.id, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json'
@@ -123,7 +122,7 @@ export default function Class() {
             }
 
             )
-            fetch("http://localhost:8888/user/" + student.id, {
+            fetch("http://localhost:8080/user/" + student.id, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json'
@@ -146,7 +145,7 @@ export default function Class() {
             if (index !== -1) {
 
                 classs.studentID.splice(index, 1);
-                fetch("http://localhost:8888/class/" + classs.id, {
+                fetch("http://localhost:8080/class/" + classs.id, {
                     method: 'PUT',
                     headers: {
                         'Content-Type': 'application/json'
@@ -165,7 +164,7 @@ export default function Class() {
             const index2 = student.classID.indexOf(classs.id)
             if (index2 !== -1) {
                 student.classID.splice(index2, 1)
-                fetch("http://localhost:8888/user/" + student.id, {
+                fetch("http://localhost:8080/user/" + student.id, {
                     method: 'PUT',
                     headers: {
                         'Content-Type': 'application/json'
@@ -262,7 +261,7 @@ export default function Class() {
     const ClassDetail = () => {
 
         return (
-            <div >
+            <div className={style.over}>
                 <div className={style.listClass}>
                 <button className={style.button} onClick={handleRegister}> Register </button>
                 <button className={style.button} onClick={handleUnRegister}> Unregister </button>
@@ -273,10 +272,10 @@ export default function Class() {
                 </div>
                
                 {
-                    flag2 ? <ShowListStudent /> : null
+                    flag2 ?  <ShowListStudent /> : null
                 }
                 {
-                    flag3 ? <ShowSchedule /> : null
+                    flag3 ?  <ShowSchedule /> : null
                 }
 
             </div>

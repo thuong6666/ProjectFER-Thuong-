@@ -82,21 +82,45 @@
   ],
   "login": [
     {
-      "id": 1,
+      "id": "AD001",
       "username": "admin@fpt.com",
       "password": "admin@123",
       "role": "ADMIN"
     },
     {
-      "id": 2,
-      "username": "teacher@fpt.com",
+      "id": "AD003",
+      "username": "admin2@fpt.com",
+      "password": "admin@123",
+      "role": "ADMIN"
+    },
+    {
+      "id": "FE002",
+      "username": "teacher2@fpt.com",
+      "password": "teacher@123",
+      "role": "TEACHER"
+    },
+    {
+      "id": "FE003",
+      "username": "teacher3@fpt.com",
       "password": "teacher@123",
       "role": "TEACHER"
     },
     {
       "id": "QE001",
+      "username": "student1@fpt.com",
+      "password": "Student123",
+      "role": "STUDENT"
+    },
+    {
+      "id": "FE808",
+      "username": "teacher4@fpt.com",
+      "password": "Teacher123",
+      "role": "TEACHER"
+    },
+    {
+      "id": "QE651",
       "username": "student@fpt.com",
-      "password": "student@123",
+      "password": "Student123",
       "role": "STUDENT"
     }
   ]

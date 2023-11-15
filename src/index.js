@@ -12,6 +12,9 @@ import Home from './pages/home/Home';
 import Login from "./pages/login/Login";
 import Admin from "./pages/admin/admin";
 import Student from "./pages/student/Student";
+import Teacher from "./pages/Teacher/Teacher";
+import TeacherClass from "./pages/Teacher/TeacherClass";
+import TeacherSchedules from "./pages/Teacher/TeacherSchedules";
 
 const router = createBrowserRouter([
   {
@@ -29,6 +32,18 @@ const router = createBrowserRouter([
   {
     path: "/student",
     element: <Student />,
+  },
+  {
+    path: "/teacher",
+    element: <Teacher />,
+  },
+  {
+    path: "/teacher/class",
+    element: <TeacherClass />,
+  },
+  {
+    path: "/teacher/schedules",
+    element: <TeacherSchedules />,
   },
 ]);
 

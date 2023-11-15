@@ -6,7 +6,7 @@ export default function Feedback() {
     const feedback = {}
     const [data, setdata] = useState([])
     useEffect(() => {
-        fetch("http://localhost:8888/feedback")
+        fetch("http://localhost:8080/feedback")
             .then(res => res.json())
             .then(res => {
                 setdata(res)
@@ -23,11 +23,12 @@ export default function Feedback() {
                 } else {
                     feedback.subtitle = titleRef.current.value
                     feedback.content = contentRef.current.value
+                    feedback.sender = JSON.stringify(localStorage.getItem('STUDENT'))
                 }
 
             }
         } while (!loop)
-        fetch("http://localhost:8888/feedback", {
+        fetch("http://localhost:8080/feedback", {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

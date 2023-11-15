@@ -1,7 +1,8 @@
 .contain{
     background-color: var(--box);
-    position: relative;
+    position: sticky;
     left: 0;
+    top: 0;
     width: 18vw;
     height: 100vh;
     display: flex;
@@ -62,5 +63,11 @@
     color: #ffffff;
 }
 .navItem:hover{
-    background-color: #535a82;
+    cursor: pointer;
+    background: linear-gradient(72.47deg,rgb(var(--v-global-theme-primary)) 22.16%,rgba(var(--v-global-theme-primary),.7) 76.47%);
+}
+.active{
+    color: #ffffff !important;
+    cursor: pointer;
+    background: linear-gradient(72.47deg,rgb(var(--v-global-theme-primary)) 22.16%,rgba(var(--v-global-theme-primary),.7) 76.47%);
 }

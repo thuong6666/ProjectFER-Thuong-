@@ -27,12 +27,10 @@
 }
 /* Trang trí cho table */
 .table {
-    border-collapse: collapse;
-    width: 80%;
     font-family: Arial, sans-serif;
     border: 1px solid #ddd;
-    display: contents;
-    margin-left: 50px;
+    width: 50%;
+    margin: auto;
   }
   
   /* Trang trí cho các thẻ thead */
@@ -42,21 +40,34 @@
   
   /* Trang trí cho các thẻ th */
   .table th {
-    text-align: left;
+    border-right: 1px solid #ddd;;
+    text-align: center;
     padding: 12px;
   }
   
   /* Trang trí cho các thẻ td */
   .table td {
+    text-align: center;
+    width: 50%;
     border: 1px solid #ddd;
     text-align: left;
     padding: 12px;
   }
   
   .table tr {
+    width: 100%;
     border: 1px solid #ddd
   }
 .containTable{
-    padding-left: 50px;
-    margin-left: 50px;
+  
+  
+  width: 100%;
+}
+.fix{
+  width: 50%;
+  margin: auto;
+}
+.over{
+  height: 80%;
+  overflow-y: scroll;
 }

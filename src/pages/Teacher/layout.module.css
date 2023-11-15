@@ -1,15 +1,13 @@
 .layout{
     display: flex;
-    /* background-color: var(--cover); */
-    background-image: url(https://static.independent.co.uk/s3fs-public/thumbnails/image/2020/06/03/13/stars.jpg);
-    background-size: cover;
+    background-color: var(--cover);
 }
 .titleBar{
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--box);
-    height: 10vh;
+    height: auto;
     margin: 1% auto;
     width: 75vw;
     border-radius: 15px;
@@ -17,4 +15,18 @@
 }
 .content{
     margin: 0 auto;
+}
+
+.info{
+    display: flex;
+    width: 90%;
+   padding: 10px;
+   flex-direction: column;
+}
+
+.button{
+    width: 100px;
+   padding: 10px;
+    background: black;
+    color: white;
 }

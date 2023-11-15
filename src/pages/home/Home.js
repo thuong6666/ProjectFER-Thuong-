@@ -1,3 +1,4 @@
+import "bootstrap/dist/css/bootstrap.css";
 import './Home.css';
 import Header from "../../component/header/Header"
 import Content1 from "../../component/Content1";

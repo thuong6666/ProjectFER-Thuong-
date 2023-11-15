@@ -26,11 +26,21 @@ export default function Login(props) {
               e.password === password.current.value
             ) {
               notify = false;
-              if(e.role==="STUDENT"){
-                localStorage.setItem(e.role,JSON.stringify(e));
-                return navigate("/student");
+              if(localStorage.length){
+                localStorage.clear();
               }
-             
+              localStorage.setItem(e.role,JSON.stringify(e));
+              switch (e.role) {
+                case 'ADMIN':
+                  return navigate("/admin",{state:'Manage User'});
+                  break;
+                case 'STUDENT':
+                  return navigate("/student",{state:'Profile'});
+                  break;
+                default:
+                  return navigate("/teacher");
+                  break;
+              }
             }
           });
           if (notify) alert("Wrong information!");
@@ -116,7 +126,7 @@ export default function Login(props) {
                 type="email"
                 ref={email}
                 id="email"
-                placeholder="Enter your Email Address"
+                placeHolder="Enter your Email Address"
               />
             </div>
             <div className={style.field}>
@@ -125,7 +135,7 @@ export default function Login(props) {
                 type="text"
                 ref={userName}
                 id="name"
-                placeholder="Enter your User name"
+                placeHolder="Enter your User name"
               />
             </div>
             <div className={style.field}>
@@ -135,7 +145,7 @@ export default function Login(props) {
                   type="password"
                   id="pass"
                   ref={password}
-                  placeholder="Enter your Password"
+                  placeHolder="Enter your Password"
                 />
                 <svg
                   width="18"

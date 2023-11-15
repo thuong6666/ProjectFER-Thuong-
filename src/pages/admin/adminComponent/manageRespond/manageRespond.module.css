@@ -56,7 +56,7 @@
 .userList table {
     border: solid 3px var(--color-theme);
     border-top: none;
-    width: 90%;
+    width: 100%;
     height: max-content;
 }
 .userList table tr {
@@ -124,6 +124,11 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
+.action {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
 .bttn {
     float: left;
     background-color: #525675;
@@ -134,10 +139,8 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin: auto;
     cursor: pointer;
     transition: 0.5s ease;
-    margin-left: 7%;
 }
 .bttn:hover {
     color: white;
@@ -165,7 +168,7 @@
     justify-content: space-evenly;
     align-items: center;
     display: flex;
-    width: 32%;
+    width: 30%;
 }
 .field:nth-child(3) {
     width: 16%;
@@ -175,19 +178,10 @@
     margin-right: 10px;
     font-size: large;
 }
-.field svg{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    margin-left: 10px;
-    scale: 115%;
-    color: var(--color-theme);
-}
 .field input {
     outline: none;
     color: var(--color-theme);
-    width: 75%;
+    width: 80%;
     background-color: rgba(255, 255, 255, 0);
     padding: 5px 10px;
     border: none;
@@ -208,26 +202,22 @@
 .submit button {
     background-color: #525675;
     border: none;
-    width: 40%;
+    width: 100%;
     color: #cacde9;
     border-radius: 5px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin: auto;
     cursor: pointer;
     transition: 0.5s ease;
+    margin-left: 7%;
     padding: 8px 25px;
     transition: 0.5s ease;
 }
 .submit button:hover {
     color: white;
     background-image: var(--hover);
-}
-.submit {
-    justify-content: space-evenly;
-    margin-top: 15px;
-    width: 30%;
-    display: flex;
 }
 .alert {
     width: 50%;

@@ -1,15 +1,18 @@
 import React, { useRef } from "react";
 import style from "./layout.module.css";
 import NavBar from "../navBar/NavBar";
+import NavBarTeacher from "../navBar/NavBarTeacher";
 
-export default function Layout(props) {
+export default function LayoutTeacher(props) {
   return (
     <>
       <div className={style.layout}>
-          <NavBar select = {props.select} current = {props.curr} role = {props.currRole}/>
+        <div>
+          <NavBarTeacher />
+        </div>
         <div className={style.content}>
         <div className={style.titleBar}>
-          <h2>{props.curr ? props.curr : props.select[0]}</h2>
+          <h2>Teacher</h2>
         </div>
          <div>
             {props.children}

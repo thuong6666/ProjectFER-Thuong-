@@ -16,14 +16,15 @@ export default function Profile() {
     useEffect(() => {
         setButton('Edit Profile')
         setBorder('none')
-        console.log(student)
-        fetch("http://localhost:8888/user")
+        fetch("http://localhost:8080/user")
             .then(res => res.json())
             .then(res => {
+                console.log(student);
                 if (res) {
                     res.forEach(e => {
                         if (e.id === student.id) {
                             setStudentInfo(e)
+                            console.log('asdfasd');
                             return
                         }
                     });
@@ -73,7 +74,7 @@ export default function Profile() {
         phoneRef.current.value === "" ? updateData.phone = studentInfo.phone : updateData.phone = phoneRef.current.value
         addressRef.current.value === '' ? updateData.address = studentInfo.address : updateData.address = addressRef.current.value
 
-        fetch("http://localhost:8888/user/" + studentInfo.id, {
+        fetch("http://localhost:8080/user/" + studentInfo.id, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
