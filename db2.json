@@ -1,0 +1,262 @@
+{
+  "user": [
+    {
+      "classID": [
+        "SE17B01"
+      ],
+      "username": "hungdnqe",
+      "mail": "hungdnqe@fpt.edu.vn",
+      "name": "Dang Ngoc Hung",
+      "birth": "14/11/2003",
+      "phone": "0123456789",
+      "address": "206 Duy Tan",
+      "id": "QE001"
+    },
+    {
+      "id": "QE002",
+      "name": "Dang Ngoc Hung",
+      "username": "hungdnqe",
+      "mail": "hungdnqe@fpt.edu.vn",
+      "address": "206 Duy Tan",
+      "birth": "14/11/2003",
+      "phone": "0123456789",
+      "classID": [
+        "SE17B.NJS"
+      ]
+    },
+    {
+      "id": "QE003",
+      "name": "Dang Ngoc Hung",
+      "username": "hungdnqe",
+      "mail": "hungdnqe@fpt.edu.vn",
+      "address": "206 Duy Tan",
+      "birth": "14/11/2003",
+      "phone": "0123456789",
+      "classID": [
+        "SE17B.NJS"
+      ]
+    },
+    {
+      "classID": [
+        "SE17B.NJS"
+      ],
+      "username": "hungdnqe",
+      "mail": "hungdnqe@fpt.edu.vn",
+      "name": "lê Thị Chí Thương",
+      "birth": "14/11/2003",
+      "phone": "0984254566",
+      "address": "206 Duy Tan",
+      "id": "QE004"
+    },
+    {
+      "id": "QE005",
+      "name": "Dang Ngoc Hung",
+      "username": "hungdnqe",
+      "mail": "hungdnqe@fpt.edu.vn",
+      "address": "206 Duy Tan",
+      "birth": "14/11/2003",
+      "phone": "0123456789",
+      "classID": [
+        "SE17B.NJS"
+      ]
+    },
+    {
+      "id": "QE006",
+      "name": "Dang Ngoc Hung",
+      "username": "hungdnqe",
+      "mail": "hungdnqe@fpt.edu.vn",
+      "address": "206 Duy Tan",
+      "birth": "14/11/2003",
+      "phone": "0123456789",
+      "classID": [
+        "SE17C.NJS"
+      ]
+    },
+    {
+      "id": "QE007",
+      "name": "Dang Ngoc Hung",
+      "username": "hungdnqe",
+      "mail": "hungdnqe@fpt.edu.vn",
+      "address": "206 Duy Tan",
+      "birth": "14/11/2003",
+      "phone": "0123456789",
+      "classID": [
+        "SE17C.NJS"
+      ]
+    },
+    {
+      "id": "QE008",
+      "name": "Dang Ngoc Hung",
+      "username": "hungdnqe",
+      "mail": "hungdnqe@fpt.edu.vn",
+      "address": "206 Duy Tan",
+      "birth": "14/11/2003",
+      "phone": "0123456789",
+      "classID": [
+        "SE17C.NJS"
+      ]
+    },
+    {
+      "id": "QE009",
+      "name": "Dang Ngoc Hung",
+      "username": "hungdnqe",
+      "mail": "hungdnqe@fpt.edu.vn",
+      "address": "206 Duy Tan",
+      "birth": "14/11/2003",
+      "phone": "0123456789",
+      "classID": [
+        "SE17C.NJS"
+      ]
+    },
+    {
+      "id": "QE010",
+      "name": "Dang Ngoc Hung",
+      "username": "hungdnqe",
+      "mail": "hungdnqe@fpt.edu.vn",
+      "address": "206 Duy Tan",
+      "birth": "14/11/2003",
+      "phone": "0123456789",
+      "classID": [
+        "SE17C.NJS"
+      ]
+    },
+    {
+      "id": "QE011",
+      "name": "Dang Ngoc Hung",
+      "username": "hungdnqe",
+      "mail": "hungdnqe@fpt.edu.vn",
+      "address": "206 Duy Tan",
+      "birth": "14/11/2003",
+      "phone": "0123456789",
+      "classID": [
+        "SE17B01"
+      ]
+    },
+    {
+      "id": "QE015",
+      "name": "Dang Ngoc Hung",
+      "username": "hungdnqe",
+      "mail": "hungdnqe@fpt.edu.vn",
+      "address": "206 Duy Tan",
+      "birth": "14/11/2003",
+      "phone": "0123456789",
+      "classID": [
+        "SE17B01"
+      ]
+    },
+    {
+      "id": "QE012",
+      "name": "Dang Ngoc Hung",
+      "username": "hungdnqe",
+      "mail": "hungdnqe@fpt.edu.vn",
+      "address": "206 Duy Tan",
+      "birth": "14/11/2003",
+      "phone": "0123456789",
+      "classID": [
+        "SE17B01"
+      ]
+    },
+    {
+      "id": "QE013",
+      "name": "Dang Ngoc Hung",
+      "username": "hungdnqe",
+      "mail": "hungdnqe@fpt.edu.vn",
+      "address": "206 Duy Tan",
+      "birth": "14/11/2003",
+      "phone": "0123456789",
+      "classID": [
+        "SE17B01"
+      ]
+    },
+    {
+      "id": "QE014",
+      "name": "Dang Ngoc Hung",
+      "username": "hungdnqe",
+      "mail": "hungdnqe@fpt.edu.vn",
+      "address": "206 Duy Tan",
+      "birth": "14/11/2003",
+      "phone": "0123456789",
+      "classID": [
+        "SE17B01"
+      ]
+    }
+  ],
+  "class": [
+    {
+      "id": "SE17B.NJS",
+      "teacherID": [
+        "Vynht"
+      ],
+      "studentID": [
+        "QE002",
+        "QE003",
+        "QE004",
+        "QE005"
+      ],
+      "subjectID": "MAS291"
+    },
+    {
+      "id": "SE17C.NJS",
+      "teacherID": [
+        "Quantp"
+      ],
+      "studentID": [
+        "QE006",
+        "QE007",
+        "QE008",
+        "QE009",
+        "QE010"
+      ],
+      "subjectID": "OSG211"
+    },
+    {
+      "id": "SE17B01",
+      "teacherID": [
+        "Duongvtt"
+      ],
+      "studentID": [
+        "QE011",
+        "QE012",
+        "QE013",
+        "QE014",
+        "QE015",
+        "QE001"
+      ],
+      "subjectID": "CSD201"
+    }
+  ],
+  "subject": [
+    {
+      "id": "MAS291",
+      "dateTime": "12:30-14:45,Monday,Thursday",
+      "name": "Toan Xac Xuat Thong Ke"
+    },
+    {
+      "id": "CSD201",
+      "dateTime": "15:00-17:15,Thursday,Friday",
+      "name": "Cau truc du lieu"
+    },
+    {
+      "id": "OSG211",
+      "dateTime": "7:00-8:45,Monday,Thursday",
+      "name": "He dieu hanh"
+    }
+  ],
+  "feedback": [
+    {
+      "id": "FB001",
+      "subtitle": "Phan anh thay Van Su Phan",
+      "content": "Thay Van Su Phan Dep try Thay Van Su Phan Dep try Thay Van Su Phan Dep try Thay Van Su Phan Dep try"
+    },
+    {
+      "id": "FB002",
+      "subtitle": "Phan anh thay Van Su Phan",
+      "content": "Thay Van Su Phan Dep try Thay Van Su Phan Dep try Thay Van Su Phan Dep try Thay Van Su Phan Dep try"
+    },
+    {
+      "id": "FB116",
+      "subtitle": "dssfssd",
+      "content": "sdf"
+    }
+  ]
+}
